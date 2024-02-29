@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./SignUp.css"
+import "./Signup.css"
 import axios from 'axios'
 
 const Signup = () => {
@@ -17,6 +17,7 @@ const Signup = () => {
    console.log(newFirstName)
   }
 
+  
   const handleLastName =(e) =>{
    const newLastName = e.target.value
    setLastName (newLastName)

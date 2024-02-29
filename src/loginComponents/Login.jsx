@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Login.css"
 
 const Login = () => {
+
+  const [email,setEmail] = useState("")
+  const [password,setPassword] = useState("")
+
+  const handleEmail = (e) =>{
+    const yourEmail = e.target.value
+    setEmail (yourEmail) 
+    console.log (yourEmail)
+  }
+
+  const handlePassword = (e) => {
+    const yourPasword = e.target.value
+    setPassword (yourPasword)
+    console.log (yourPasword)
+  }
+
   return (
     <div>
+      <form>
         <section className='wholebodysa'>
         <div className='registerdContainersa'>
           <div className='registerdLogoContainersa'>
@@ -14,10 +31,10 @@ const Login = () => {
           </div>
           <div className='inputContainerssa'>
             <div className='registeredInputContainer1sa'>
-              <h3>Business Name</h3>
-              <input type="text" className='BusinessNamesa' placeholder='Enter your business name'/>
-              <h3>Business Address</h3>
-              <input type="text" placeholder='Enter your business address' className='addresssa' />
+              <h3>Email</h3>
+              <input type="text" className='BusinessNamesa' placeholder='Enter your email' onChange={handleEmail}/>
+              <h3>Password</h3>
+              <input type="text" placeholder='Enter your password' className='addresssa' onChange={handlePassword} />
             </div>
           
           </div>
@@ -30,6 +47,7 @@ const Login = () => {
         </div>
 
       </section>
+      </form>
     </div>
   )
 }
