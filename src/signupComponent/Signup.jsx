@@ -17,6 +17,7 @@ const Signup = () => {
    console.log(newFirstName)
   }
 
+  
   const handleLastName =(e) =>{
    const newLastName = e.target.value
    setLastName (newLastName)
