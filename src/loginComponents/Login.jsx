@@ -59,6 +59,8 @@ const Login = () => {
   const navigateBack = () => {
     navigate(-1)
   }
+
+  
   const navigateToHome = () => {
     navigate("/")
   }
@@ -108,6 +110,7 @@ const Login = () => {
       <div onClick={navigateBack} className="back_icon">
         <IoMdArrowRoundBack size={30} />
       </div>
+      
     </div>
   )
 }

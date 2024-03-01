@@ -5,6 +5,7 @@ import Swal from "sweetalert2"
 import { useNavigate } from "react-router-dom/dist/umd/react-router-dom.development"
 import { BeatLoader } from "react-spinners"
 import { Link } from 'react-router-dom'
+import axios from "axios"
 
 
 const RegisterLogin = () => {
