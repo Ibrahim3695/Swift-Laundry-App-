@@ -131,10 +131,10 @@ const Header = () => {
 
       <section className='btnDiv'>
 
-        <NavLink className='main_loginButton' to='/login'>
+        <NavLink className='main_loginButton' to='/businessPage'>
           Login
         </NavLink>
-        <NavLink className='signUpButton' to='/signup'>
+        <NavLink className='signUpButton' to='/businessPage'>
           Sign up
         </NavLink>
       </section>

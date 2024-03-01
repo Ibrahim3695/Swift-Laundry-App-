@@ -1,5 +1,5 @@
 .footerBody{
-    height: 70vh;
+    height: 50vh;
     width: 100%;
     background: black;
     display: flex;
@@ -11,17 +11,17 @@
 
 .footerLeft{
     height: 90%;
-    width: 40%;
+    width:  40%;
     /* background: red; */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
 .footerLeftWrapper{
     height: 80%;
-    width: 70%;
+    width: 65%;
     /* background: blue; */
     display: flex;
     justify-content: space-around;
@@ -53,10 +53,10 @@
 
 .footerContact{
     height: 20%;
-    width: 40%;
+    width: 35%;
     /* background: palevioletred; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -79,6 +79,7 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
+    /* margin-bottom: 20px; */
 }
 
 
