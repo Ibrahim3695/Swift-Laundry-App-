@@ -66,6 +66,7 @@
 }
 
 
+
 .inputContainerssa {
     height: 50%;
     width: 83%;
@@ -124,12 +125,20 @@
     height: 70%;
     width: 100%;
     outline-color: rgb(190, 190, 255);
-    padding-left: 10px;
     border: 1px solid rgb(177, 175, 175);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.addresssa > input {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+}
 
 
 .signUpsa {

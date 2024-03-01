@@ -22,6 +22,7 @@ import DashboardLayout from './dashboardLayoutComponent/DashboardLayout';
 import Order from './orderComponent/Order';
 import Subscribe from './subscribeComponent/Subscribe';
 import DashBoard from './dashBoardComponent/DashBoard';
+import Plan from './signupComponent/planComponent/Plan';
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,14 @@ const router = createBrowserRouter([
         path: "/shopPage",
         element: <ShopPage />
       },
-
+      {
+        path: "/offer",
+        element: <OfferPage />
+      },
+      {
+        path: "/plans",
+        element: <Plan />
+      },
       {
         path: "/aboutPage",
         element: <AboutPage />

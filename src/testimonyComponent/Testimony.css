@@ -60,7 +60,7 @@
 .divbg{
     height: 70%;
     width: 90%;
-    background: green;
+    /* background: green; */
 }
 
 
@@ -246,6 +246,6 @@
     .testimoniesText{
         height: 70%;
         width: 90%;
-        background: red;
+        /* background: red; */
     }
 }
