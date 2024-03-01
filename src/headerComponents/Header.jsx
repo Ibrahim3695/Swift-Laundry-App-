@@ -1,8 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
 import { NavLink } from 'react-router-dom'
 import { Link } from "react-scroll"
 const Header = () => {
+
+
+  const [showHome, setShowHome] = useState(true)
+  const [showShop, setShop] = useState(false)
+  const [showOffer, setOffer] = useState(false)
+  const [showPlans, setPlans] = useState(false)
+  const [showAbout, setAbout] = useState(false)
+  const [showContact, setContact] = useState(false)
+  const handleShowHome = () => {
+    setShowHome(true)
+    setOffer(false)
+    setPlans(false)
+    setAbout(false)
+    setContact(false)
+    setShop(false)
+  }
+  const handleShowShop = () => {
+    setShowHome(false)
+    setShop(true)
+    setOffer(false)
+    setPlans(false)
+    setAbout(false)
+    setContact(false)
+  }
+  const handleShowOffer = () => {
+    setShowHome(false)
+    setOffer(true)
+    setShop(false)
+    setPlans(false)
+    setAbout(false)
+    setContact(false)
+  }
+  const handleShowPlans = () => {
+    setShowHome(false)
+    setOffer(false)
+    setPlans(true)
+    setAbout(false)
+    setShop(false)
+    setContact(false)
+  }
+  const handleShowAbout = () => {
+    setShowHome(false)
+    setShop(false)
+    setOffer(false)
+    setPlans(false)
+    setAbout(true)
+    setContact(false)
+  }
+  const handleShowContact = () => {
+    setShowHome(false)
+    setOffer(false)
+    setPlans(false)
+    setAbout(false)
+    setShop(false)
+    setContact(true)
+  }
+
   return (
     <div className='HeaderMainDiv'>
       <section className='logoDiv'>
@@ -12,46 +69,74 @@ const Header = () => {
       <section className='writeUpDiv'>
         <ul>
           <Link
-
-            // activeClass='active'
+            onClick={handleShowHome}
             smooth={true}
             offset={-100}
             duration={500}
             to='home'
+            className={showHome ? "active" : "inactive"}
           >
-            <NavLink to="/"
-              className={({ isActive, isPending }) => isActive ? "active" : "inactive"}>Home</NavLink>
+            <NavLink className={showHome ? "active" : "inactive"} to="/">
+              Home
+            </NavLink>
           </Link>
-          <NavLink to="/shopPage"
-            className={({ isActive, isPending }) => isActive ? "active" : "inactive"}>Shops</NavLink>
+          <NavLink
+            onClick={handleShowShop}
+            to="/shopPage"
+            className={showShop ? "active" : "inactive"}>
+            Shops
+          </NavLink>
           <Link
+            onClick={handleShowOffer}
 
             smooth={true}
             offset={-100}
             duration={500}
+            className={showOffer ? "active" : "inactive"}
             to='offer'>
-            <NavLink 
-              className={({ isActive, isPending }) => isActive ? "active" : "inactive"}>Offers</NavLink>
+            <NavLink
+            to=""
+            className={showOffer ? "active" : "inactive"}
+            >
+            Offers
+            </NavLink>
           </Link>
           <Link
             smooth={true}
             offset={-100}
             duration={500}
+            onClick={handleShowPlans}
+            className={showPlans ? "active" : "inactive"}
             to='plans'
           >
-            <NavLink
-              className={({ isActive, isPending }) => isActive ? "active" : "inactive"}>Plans</NavLink>
+            <NavLink 
+            className={showPlans ? "active" : "inactive"}
+            
+            to="plans">
+              Plans
+            </NavLink>
           </Link>
-          <NavLink to="/aboutPage"
-            className={({ isActive, isPending }) => isActive ? "active" : "inactive"}>About</NavLink>
-          <NavLink to="contactPage/"
-            className={({ isActive, isPending }) => isActive ? "active" : "inactive"}>Contact</NavLink>
+          <NavLink
+            onClick={handleShowAbout}
+
+            to="/aboutPage"
+            className={showAbout ? "active" : "inactive"}>About</NavLink>
+          <NavLink
+            onClick={handleShowContact}
+
+            to="contactPage/"
+            className={showContact ? "active" : "inactive"}>Contact</NavLink>
         </ul>
       </section>
 
       <section className='btnDiv'>
-        <button className='loginButton'>Login</button>
-        <button className='signUpButton'>Sign up</button>
+
+        <NavLink className='main_loginButton' to='/login'>
+          Login
+        </NavLink>
+        <NavLink className='signUpButton' to='/signup'>
+          Sign up
+        </NavLink>
       </section>
 
       <section className='burgerIconImage'>

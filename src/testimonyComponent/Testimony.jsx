@@ -11,9 +11,9 @@ const Testimony = () => {
       <div className='testimoniesContainer'>
         <div className='testimoniesCard1'>
           <article className='profileCircle1'></article>
-          <div className='divbg'>
+          {/* <div className='divbg'>
           <h1>good</h1>
-          </div>
+          </div> */}
         </div>
         <div className='testimoniesCard2'>
           <div className='profileCircle2'></div>
