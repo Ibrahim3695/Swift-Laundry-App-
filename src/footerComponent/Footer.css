@@ -18,6 +18,9 @@
     align-items: center;
 }
 
+p{
+    cursor: pointer;
+}
 
 .footerLeftWrapper{
     height: 80%;

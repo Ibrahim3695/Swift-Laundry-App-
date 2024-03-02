@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom/dist/umd/react-router-dom.developm
 import { BeatLoader } from "react-spinners"
 import { Link } from 'react-router-dom'
 import axios from "axios"
+import { IoMdArrowRoundBack } from "react-icons/io"
 
 
 const RegisterLogin = () => {
@@ -43,7 +44,7 @@ const RegisterLogin = () => {
       setIsLoading(true)
       const response = await axios.post(url, data)
       Swal.fire({
-        title: "Congratulations! You've Successfully Login To  Swift Laundry",
+        // title: "Congratulations! You've Successfully Login To  Swift Laundry",   
         text: response.data?.message,
         icon: "success"
       });
@@ -60,6 +61,13 @@ const RegisterLogin = () => {
     } finally {
       setIsLoading(false)
     }
+  }
+
+  const navigatei = useNavigate()
+
+
+  const navigateToHome = () => {
+    navigatei("/")
   }
 
 
@@ -97,6 +105,9 @@ const RegisterLogin = () => {
 
       </section>
       </form>
+      <div onClick={navigateToHome} className="back_icon">
+        <IoMdArrowRoundBack size={30} />
+      </div>
     </>
   )
 }

@@ -136,7 +136,7 @@
         width: 100%;
         height: 150vh;
         /* margin-top: 20%; */
-        /* background-color: lightgray; */
+        background-color: lightgray;
         background: white;
     }
     
@@ -315,7 +315,7 @@
     }
     .saveTimeDiv{
         width: 60%;
-        height: 35%;
+        height: 30%;
         border-radius: 10px;
         margin-bottom: 3%;
         display: flex;
@@ -346,7 +346,7 @@
     }
     .payOnlineDiv{
         width: 60%;
-        height: 35%;
+        height: 30%;
         border-radius: 10px;
         margin-bottom: 3%;
         display: flex;
@@ -377,7 +377,7 @@
     }
     .satisfactionDiv{
         width: 60%;
-        height: 35%;
+        height: 30%;
         border-radius: 10px;
         margin-bottom: 3%;
         background-color: white;

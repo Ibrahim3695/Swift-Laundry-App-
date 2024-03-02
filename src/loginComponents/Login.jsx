@@ -40,7 +40,7 @@ const Login = () => {
         text: response.data?.message,
         icon: "success",
       });
-      navigate("/dashboards")
+      navigate("/verify")
 
 
     } catch (err) {
@@ -55,6 +55,9 @@ const Login = () => {
       setIsLoading(false);
     }
   };
+
+
+
 
   const navigateBack = () => {
     navigate(-1)
