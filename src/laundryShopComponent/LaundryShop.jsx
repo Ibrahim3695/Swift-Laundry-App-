@@ -6,10 +6,18 @@ import { useNavigate } from 'react-router-dom/dist/umd/react-router-dom.developm
 // import Footer from '../footerComponent/Footer'
 
 const LaundryShop = () => {
+
   const navigate = useNavigate()
   const navigateToShop = () =>{
     navigate("/shopPage")
   }
+
+  
+  const navigateLogin = useNavigate()
+  const navigateToLoginPage = () =>{
+    navigateLogin("/login")
+  }
+
 
   // navigate("/LandingPage")
 
@@ -30,7 +38,7 @@ const LaundryShop = () => {
           <h2>Cleaneat Laundry</h2>
           <p>161,muyibi,olodi Apapa.</p>
           <h5>34km Away</h5>
-          <button className='BTN1'>View</button>
+          <button className='BTN1' onClick={navigateToLoginPage}>View</button>
         </article>
 
         <article className='washDivs'>
@@ -40,7 +48,7 @@ const LaundryShop = () => {
           <h2>LaundryMann</h2>
           <p>162,muyibi,olodi Apapa</p>
           <h5>70km Away</h5>
-          <button className='BTN2'>View</button>
+          <button className='BTN2' onClick={navigateToLoginPage}>View</button>
         </article>
 
         <article className='deliverDivs'>
@@ -50,7 +58,7 @@ const LaundryShop = () => {
           <h2>True Wash</h2>
           <p>161,muyibi,olodi Apapa</p>
           <h5>85km Away</h5>
-          <button className='BTN3'>View</button>
+          <button className='BTN3' onClick={navigateToLoginPage}>View</button>
         </article>
 
         {/* </main> */}

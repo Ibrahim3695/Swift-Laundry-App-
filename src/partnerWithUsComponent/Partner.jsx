@@ -1,7 +1,14 @@
 import React from 'react'
 import "./Partner.css"
+import { useNavigate } from 'react-router-dom/dist/umd/react-router-dom.development'
 
 const Partner = () => {
+  const navigaty = useNavigate()
+  const navigateToBusinessSignUp = () =>{
+    navigaty("/registerSignup")
+  }
+
+
   return (
     <div className='partnerWithUsMainDiv'>
       <div className='partnersContainer'>
@@ -23,7 +30,7 @@ const Partner = () => {
             <h4>Customizable profiles and services.</h4>
           </div>
           <div className='registerdBtn'>
-            <button className='btnForRegistration'>Registerd Business</button>
+            <button className='btnForRegistration' onClick={navigateToBusinessSignUp}>Registerd Business</button>
           </div>
         </div>
       </div>

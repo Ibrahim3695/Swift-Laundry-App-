@@ -25,6 +25,8 @@ import DashBoard from './dashBoardComponent/DashBoard';
 import Plan from './signupComponent/planComponent/Plan';
 // import BusinessPage from './modulesComponent/businessPage';
 import BusinessP from './modulesComponent/Test';
+import LoginModules from './LoginModules/LoginCard';
+import Verify from './verifyPage/verify';
 
 const router = createBrowserRouter([
   {
@@ -61,23 +63,43 @@ const router = createBrowserRouter([
     path: "/registerSignup",
     element: <RegisterSignUp />
   },
+
+
   {
     path: "/registerLogin",
     element: <RegisterLogin />
   },
+
+
   {
     path: "/signup",
     element: <Signup />
   },
+
+
   {
     path: "/login",
     element: <Login />
   },
+
+
+  {
+    path: "/verify",
+    element: <Verify />
+  },
+
+
   {
     path: "/businessPage",
     element: <BusinessP/>
   },
-  
+
+  {
+    path: "*",
+    element: <div>Page not found</div>
+  },
+
+ 
 
 
   {

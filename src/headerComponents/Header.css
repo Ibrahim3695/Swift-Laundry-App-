@@ -80,11 +80,30 @@
     color: #35BAEA;
 }
 
-.loginButton:hover {
-    background-color: #35BAEA;
+.main_loginButton:hover{
+    width: 35%;
+    height: 70%;
+    border-radius: 10px;
     color: white;
-    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(168, 195, 212);
+    border: 1px solid rgb(168, 195, 212);
+    background-color: #35BAEA;
+}
+
+.loginButton:hover {
+    /* background-color: #35BAEA; */
+    width: 35%;
+    height: 70%;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    border: 1px solid rgb(168, 195, 212);
+    background-color: white;
     transform: scale(0.3s);
+
+
+
 
 }
 
@@ -108,7 +127,7 @@
     width: 35%;
     height: 70%;
     border-radius: 10px;
-    color: black;
+    color: #35BAEA;
     cursor: pointer;
     border: 1px solid rgb(168, 195, 212);
     background-color: white;
@@ -125,6 +144,16 @@
     transform: scale(1);
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active:hover{
+    transition: all 450ms ;
+    transform: scale(1.2);
+}
+
+.inactive:hover{
+    transition: all 450ms ;
+    transform: scale(1.2);
 }
 
 .inactive {

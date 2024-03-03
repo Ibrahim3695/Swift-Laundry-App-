@@ -226,7 +226,7 @@ samp {
         background-size: cover;
         background-color: rgb(90, 107, 90);
         position: relative;
-        margin-top: 60%;
+        /* margin-top: 60%; */
     }
 
     .planTopDiv {
@@ -285,7 +285,7 @@ samp {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: white;
+        background-color: red;
         box-shadow: 0 0 10px lightgray;
         z-index: 1;
 
@@ -449,7 +449,7 @@ samp {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: rgb(90, 107, 90);
+        /* background-color: rgb(90, 107, 90); */
         position: relative;
         /* margin-top: 110%; */
     }
@@ -461,7 +461,7 @@ samp {
         flex-direction: column;
         /* justify-content: center; */
         align-items: center;
-        background-color: rgb(167, 160, 160);
+        /* background-color: rgb(167, 160, 160); */
     }
     
     p {
