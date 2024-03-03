@@ -1,4 +1,4 @@
-.mainDashboardDivs{
+.BusinessmainDashboardDivs{
     width: 100%;
     height: 100%;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     background-color: white;    
 }
-.taskNumberDiv{
+.BusinesstaskNumberDiv{
     width: 90%;
     height: 30%;
     display: flex;
@@ -14,7 +14,7 @@
     margin-top: 1.5%;
     /* background-color: rgb(234, 176, 82); */
 }
-.cardNumbers1{
+.BusinesscardNumbers1{
     width: 32%;
     height: 100%;
     border-radius: 10px;
@@ -22,19 +22,19 @@
     padding: 40px ;
     background-color: rgb(210, 210, 210);
 }
-.cardNumbers1 p{
+.BusinesscardNumbers1 p{
     width: 100%;
     font-size: 20px;
     margin-top: 5%;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.cardNumbers1 h1{
+.BusinesscardNumbers1 h1{
     font-size: 25px;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.cardNumbers2{
+.BusinesscardNumbers2{
     width: 32%;
     height: 100%;
     border-radius: 10px;
@@ -42,7 +42,7 @@
     padding: 40px ;
     background-color:#fbe2c1;
 }
-.cardNumbers2 p{
+.BusinesscardNumbers2 p{
     width: 100%;
     font-size: 20px;
     margin-top: 5%;
@@ -50,13 +50,13 @@
     color: #FF9C07;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.cardNumbers2 h1{
+.BusinesscardNumbers2 h1{
     font-size: 25px;
     font-weight: 700;
     color: #FF9C07;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.cardNumbers3{
+.BusinesscardNumbers3{
     width: 32%;
     height: 100%;
     border-radius: 10px;
@@ -64,7 +64,7 @@
     padding: 40px ;
     background-color: rgb(198, 234, 198);
 }
-.cardNumbers3 p{
+.BusinesscardNumbers3 p{
     width: 100%;
     font-size: 20px;
     margin-top: 5%;
@@ -72,13 +72,13 @@
     color: green;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.cardNumbers3 h1{
+.BusinesscardNumbers3 h1{
     font-size: 25px;
     font-weight: 700;
     color: green;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.itemOrderDiv{
+.BusinessitemOrderDiv{
     width: 92%;
     height: 63%;
     display: flex;
@@ -89,7 +89,7 @@
     box-shadow: 0 0 10px rgb(235, 234, 234);
     background-color: white;
 }
-.companyDiv{
+.BusinesscompanyDiv{
     width: 95%;
     height: 10%;
     margin-top: 2%;
@@ -97,7 +97,7 @@
     border-bottom: 1px solid rgb(222, 220, 220);
     /* background-color: rgb(205, 194, 194); */
 }
-.companyDiv p{
+.BusinesscompanyDiv p{
     width: 100%;
     text-align: center;
     font-weight: 600;
@@ -106,14 +106,14 @@
     /* box-shadow: 0 0 10px rgb(235, 234, 234); */
     /* background-color: rgb(141, 108, 108); */
 }
-.companyDiv2{
+.BusinesscompanyDiv2{
     width: 95%;
     height: 90%;
     margin-top: 1%;
     overflow-y: scroll;
     /* background-color: rgb(205, 194, 194); */
 }
-.orderOtems{
+.BusinessorderOtems{
     width: 100%;
     height: 15%;
     margin-top: 0.9%;
@@ -121,11 +121,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgb(236, 240, 244);
+    border: 1px solid rgb(208, 233, 242);
+    /* border: 1px solid rgb(236, 240, 244); */
     box-shadow: 0 0 10px rgb(240, 237, 237);
     /* background-color: white; */
 }
-.orderOtems p{
+.BusinessorderOtems p{
     font-size: 14px;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

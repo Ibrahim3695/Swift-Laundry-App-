@@ -1,11 +1,15 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
 import "./DashboardLayout.css"
 import { Link } from 'react-router-dom'
+import ProfileModal from '../components/ProfileModal'
 
 
 
 const DashboardLayout = () => {
+  const [showProfile, setShowProfile] = useState(false)
+
+
   return (
     <div className='mainDashboardDiv'>
       <article className='leftMainDiv'>
@@ -16,36 +20,49 @@ const DashboardLayout = () => {
 
         <section className='writeUpMiddleDiv'>
           <div className='holdWriteUp'>
-            <Link to={"/dashboards"} className='dashboard1'>
+            <NavLink to={"/dashboards"} className={({ isActive }) => isActive ? 'isactive' : 'isnotactive'}>
               <img src="./grace.png" alt="" />
               <p>Dashboard</p>
-            </Link>
+            </NavLink>
 
-            <Link to={"/order"} className='order1'>
+            <NavLink to={"/order"} className={({ isActive }) => isActive ? 'isactive' : 'isnotactive'}>
               <img src="./grace.png" alt="" />
-              <p>Order</p>
-            </Link>
+              <p>Do Laundry</p>
+            </NavLink>
 
-            <Link to={"/subscribe"} className='subscribe1'>
+            <NavLink to={"/subscribe"} className={({ isActive }) => isActive ? 'isactive' : 'isnotactive'}>
               <img src="./grace.png" alt="" />
               <p>Subscribe</p>
-            </Link>
+            </NavLink>
           </div>
         </section>
 
-        <section className='logOutDiv'></section>
+        <section className='logOutDiv'>
+          <img src="logout.png" alt="" />
+          <p>Log out</p>
+        </section>
       </article>
 
       <article className='rightMainDiv'>
 
         <div className='topMainDiv'>
-
+          <section className='nameDiv'>Welcome, David</section>
+          <section className='iconImageDiv'>
+            <article className='ICN1'></article>
+            <article className='ICN2' onClick={() => setShowProfile(!showProfile)}><img src="./profile.png" alt="" /></article>
+          </section>
         </div>
 
         <div className='bottomMainDiv'>
           <Outlet />
         </div>
       </article>
+
+
+      {
+        showProfile ? <ProfileModal /> : ""
+      }
+
     </div>
   )
 }
