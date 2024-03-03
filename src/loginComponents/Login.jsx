@@ -40,7 +40,7 @@ const Login = () => {
         text: response.data?.message,
         icon: "success",
       });
-      navigate("/verify")
+      navigate("/dashboards")
 
 
     } catch (err) {

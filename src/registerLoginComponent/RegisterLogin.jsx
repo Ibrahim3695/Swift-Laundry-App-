@@ -48,7 +48,7 @@ const RegisterLogin = () => {
         text: response.data?.message,
         icon: "success"
       });
-      navigate("/registerLogin")
+      navigate("/dashboards")
 
     } catch (err) {
       if (err.response) {
