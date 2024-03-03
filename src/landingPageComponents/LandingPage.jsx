@@ -9,6 +9,7 @@ import Testimony from '../testimonyComponent/Testimony'
 import Quality from '../qualityLaudryComponent/Quality'
 import Footer from '../footerComponent/Footer'
 import Plan from '../signupComponent/planComponent/Plan'
+// import BusinessPage from '../modulesComponent/businessPage'
 
 const LandingPage = () => {
   return (
@@ -23,6 +24,7 @@ const LandingPage = () => {
       <Testimony/>
       <Quality/>
       <Footer/>
+      {/* <BusinessPage/> */}
     </div>
   )
 }

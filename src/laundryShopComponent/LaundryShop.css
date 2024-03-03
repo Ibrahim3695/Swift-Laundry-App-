@@ -58,6 +58,13 @@
     color: rgba(255, 0, 0, 0.493);
 }
 
+
+/* .foot{
+    height: 20%;
+    width: 100%;
+    background: red;
+} */
+
 .pickUpLogos {
     width: 85%;
     height: 45%;
@@ -200,11 +207,11 @@
     color: black;
 }
 
-.divbg{
+/* .divbg{
     height: 50%;
     width: 90%;
     background: red;
-}
+} */
 
 
 .wash1{
@@ -254,13 +261,13 @@
         flex-direction: column;
         gap: 1px;
         /* position: relative; */
-        margin-top: 25px;
+        /* margin-top: 25px; */
         /* background-color: rgb(72, 122, 108); */
     }
     
     .pickUpDivs {
-        width: 55%;
-        height: 35%;
+        width: 60%;
+        height: 30%;
         border-radius: 5px;
         margin-top: 3%;
         display: flex;
@@ -281,7 +288,7 @@
         height: 45%;
         border-radius: 5px;
         margin-top: 6%;
-        background-color: rgb(194, 185, 185);
+        /* background-color: rgb(194, 185, 185); */
     }
     
     .pickUpDivs h2 {
@@ -310,8 +317,8 @@
     }
     
     .washDivs {
-        width: 55%;
-        height: 35%;
+        width: 60%;
+        height: 30%;
         border-radius: 5px;
         /* margin-bottom: 3%; */
         display: flex;
@@ -360,15 +367,15 @@
     }
     
     .deliverDivs {
-        width:55%;
-        height:35%;
+        width:60%;
+        height:30%;
         border-radius: 5px;
         /* margin-bottom: 3%; */
         background-color: white;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-direction: cored
+        flex-direction: cored;
         box-shadow: 0 0 7px lightgray;
     }
     
@@ -410,13 +417,14 @@
     }
     .absolute1 {
         position: absolute;
-        left: 42%;
-        font-size: 13px;
-        top: 482%;
-        /* color: rgb(64, 176, 241); */
+        left: 40%;
+        font-size: 18px;
+        top: 503%;
+        color: rgb(8, 71, 107);
         cursor: pointer;
         border: none;
-        color: black;
+        /* color: black; */
+        /* background: red; */
     
     }
     
@@ -472,7 +480,7 @@
     }
     
     .pickUpDiv {
-        width: 28%;
+        width: 30%;
         height: 65%;
         border-radius: 10px;
         margin-bottom: 3%;
@@ -505,7 +513,7 @@
     }
     
     .washDiv {
-        width: 28%;
+        width: 30%;
         height: 65%;
         border-radius: 10px;
         margin-bottom: 3%;
@@ -542,7 +550,7 @@
     }
     
     .deliverDiv {
-        width: 28%;
+        width: 30%;
         height: 65%;
         border-radius: 10px;
         margin-bottom: 3%;

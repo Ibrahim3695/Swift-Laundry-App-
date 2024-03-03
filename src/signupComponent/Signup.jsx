@@ -66,11 +66,13 @@ const Signup = () => {
       setIsLoading(true)
       const response = await axios.post(url, data)
       Swal.fire({
-        title: "Congratulations! You've Successfully Registered with Swift Laundry",
+        title: "Please Check Your Email for verification",
         text: response.data?.message,
-        icon: "success"
+        icon: "success",
+        timer: 5000
       });
     } catch (err) {
+      console.log("errr", err);
       if (err.response) {
         Swal.fire({
           icon: "error",
@@ -110,7 +112,7 @@ const Signup = () => {
             <div className='inputContainersa'>
               <div className='registeredInputContainer1a'>
                 <h3>First Name</h3>
-                <input required type="text" className='BusinessNamea' placeholder='Enter your first name' onChange={handleFirstName} />
+                <input  required type="text" className='BusinessNamea' placeholder='Enter your first name' onChange={handleFirstName} />
                 <h3>Last Name</h3>
                 <input required type="text" placeholder='Enter your last name' className='addressa' onChange={handleLastName} />
               </div>

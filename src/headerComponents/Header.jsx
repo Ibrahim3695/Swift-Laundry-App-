@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import "./Header.css"
 import { NavLink } from 'react-router-dom'
 import { Link } from "react-scroll"
+import LoginModules from '../LoginModules/LoginCard'
+import BusinessP from '../modulesComponent/Test'
+
+
 const Header = () => {
 
 
@@ -60,6 +64,25 @@ const Header = () => {
     setContact(true)
   }
 
+  const [show, setShow] = useState(false)
+  const [shows, setShows] = useState(false)
+
+  const showLoginModules = () => {
+    setShow(!show)
+    setShows(false)
+  }
+
+  const showLoginModule = () => {
+    setShows(!shows)
+    setShow(false)
+  }
+
+
+  const removeLoginModule = () => {
+    setShows(false)
+    setShow(false)
+  }
+
   return (
     <div className='HeaderMainDiv'>
       <section className='logoDiv'>
@@ -95,10 +118,10 @@ const Header = () => {
             className={showOffer ? "active" : "inactive"}
             to='offer'>
             <NavLink
-            to=""
-            className={showOffer ? "active" : "inactive"}
+              to=""
+              className={showOffer ? "active" : "inactive"}
             >
-            Offers
+              Offers
             </NavLink>
           </Link>
           <Link
@@ -109,10 +132,10 @@ const Header = () => {
             className={showPlans ? "active" : "inactive"}
             to='plans'
           >
-            <NavLink 
-            className={showPlans ? "active" : "inactive"}
-            
-            to="plans">
+            <NavLink
+              className={showPlans ? "active" : "inactive"}
+
+              to="plans">
               Plans
             </NavLink>
           </Link>
@@ -131,17 +154,22 @@ const Header = () => {
 
       <section className='btnDiv'>
 
-        <NavLink className='main_loginButton' to='/login'>
+        <div onClick={showLoginModules} className='main_loginButton'>
           Login
-        </NavLink>
-        <NavLink className='signUpButton' to='/signup'>
+        </div>
+        <div onClick={showLoginModule} className='signUpButton'>
           Sign up
-        </NavLink>
+        </div>
       </section>
 
       <section className='burgerIconImage'>
         <img src="./burger.png" alt="" />
       </section>
+
+      <>
+        {show ? <LoginModules onClick={removeLoginModule} /> : null}
+        {shows ? <BusinessP onClick={removeLoginModule} /> : null}
+      </>
     </div>
   )
 }

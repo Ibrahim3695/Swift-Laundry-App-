@@ -8,6 +8,7 @@ import { BeatLoader } from 'react-spinners';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom/dist/umd/react-router-dom.development';
 import { Link } from 'react-scroll';
+import { IoMdArrowRoundBack } from 'react-icons/io';
 
 const RegisterSignUp = () => {
   const [businessName,setBusinessName] = useState("")
@@ -93,6 +94,13 @@ const RegisterSignUp = () => {
     }
   }
 
+
+  
+ 
+  const navigateBack = () => {
+    navigate(-1)
+  }
+
   return (
     <>
     <form onSubmit={handleSubmitForm}>
@@ -140,6 +148,9 @@ const RegisterSignUp = () => {
 
       </div>
       </form>
+      <div onClick={navigateBack} className="back_icon">
+        <IoMdArrowRoundBack size={30} />
+      </div>
     </>
 
   )

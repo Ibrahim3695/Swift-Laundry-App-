@@ -23,9 +23,6 @@ import Order from './orderComponent/Order';
 import Subscribe from './subscribeComponent/Subscribe';
 import DashBoard from './dashBoardComponent/DashBoard';
 import Plan from './signupComponent/planComponent/Plan';
-import BusinessDashBoard from './businessDashBoardComponent/BusinessDashBoard';
-import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
-import BusinessOrder from './businessOrderComponentss/BusinessOrder';
 
 const router = createBrowserRouter([
   {
@@ -62,21 +59,25 @@ const router = createBrowserRouter([
     path: "/registerSignup",
     element: <RegisterSignUp />
   },
+
+
   {
     path: "/registerLogin",
     elemengt: <RegisterLogin />
   },
+
+
   {
     path: "/signup",
     element: <Signup />
   },
+
+
   {
     path: "/login",
     element: <Login />
   },
-
-
-
+    
   {
     element: <DashboardLayout />,
     children: [

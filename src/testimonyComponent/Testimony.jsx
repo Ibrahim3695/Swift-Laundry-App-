@@ -10,16 +10,22 @@ const Testimony = () => {
       </header>
       <div className='testimoniesContainer'>
         <div className='testimoniesCard1'>
-          <article className='profileCircle1'></article>
+          <article className='profileCircle1'>
+            <img src="./dani.jpg" alt="" className='daniella'/>
+          </article>
           {/* <div className='divbg'>
           <h1>good</h1>
           </div> */}
         </div>
         <div className='testimoniesCard2'>
-          <div className='profileCircle2'></div>
+          <div className='profileCircle2'>
+            <img src="./dani1.jpg" alt="" className='daniella'/>
+          </div>
         </div>
         <div className='testimoniesCard3'>
-          <div className='profileCircle3'></div>
+          <div className='profileCircle3'>
+          <img src="./messi;s wife.jpg" alt="" className='daniella'/>
+          </div>
         </div>
       </div>
     </div>
