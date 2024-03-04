@@ -103,7 +103,7 @@ const Login = () => {
             <div className='registeredBtnContainersa'>
               <button disabled={isLoading} type='submit' className='signUpsa'>{isLoading ? <BeatLoader color="white" /> : "Login"}</button>
               <div className='alreadyHaveAccountsa'>
-                <span >Don't have an account? <Link style={{ textDecoration: "none" }} to="/signup"><b>Sign up</b></Link></span>
+                <span >Don't have an account? <Link style={{ textDecoration: "none" }} to="/signup"><b>Login</b></Link></span>
               </div>
             </div>
           </div>

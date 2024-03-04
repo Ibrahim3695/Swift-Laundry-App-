@@ -22,12 +22,30 @@ const Partner = () => {
             <h1>Want to Partner with us?</h1>
           </div>
           <div className='bookingContainer'>
+            <div className='mark'>
+              <img src="./mark.png" alt="" />
             <h4>Online booking and appointment scheduling.</h4>
-            <h4>Customer management tools.</h4>
-            <h4>Integration with payment gateways.</h4>
-            <h4>Marketing and promotion capabilities.</h4>
-            <h4>Analytics and reporting tools.</h4>
+            </div>
+            <div className='mark2'>
+              <img src="./mark.png" alt="" />
+              <h4>Integration with payment gateways.</h4>
+            </div>
+            <div className='mark3'>
+              <img src="./mark.png" alt="" />
+              <h4>Marketing and promotion capabilities.</h4>
+            </div>
+            <div className='mark4'>
+              <img src="./mark.png" alt="" />
+              <h4>Analytics and reporting tools.</h4>
+            </div>
+            <div className='mark5'>
+              <img src="./mark.png" alt="" />
+              <h4>Customizable profiles and services.</h4>
+            </div>
+            <div className='mark6'>
+              <img src="./mark.png" alt="" />
             <h4>Customizable profiles and services.</h4>
+            </div>
           </div>
           <div className='registerdBtn'>
             <button className='btnForRegistration' onClick={navigateToBusinessSignUp}>Registerd Business</button>

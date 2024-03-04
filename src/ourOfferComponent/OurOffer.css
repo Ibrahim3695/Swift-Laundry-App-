@@ -3,6 +3,7 @@
     height: 85vh;
     margin-top: 7%;
     background-color: lightgray;
+    position: relative;
 }
 
 .offerTopDiv{
@@ -127,6 +128,24 @@
    text-align: center;
    padding-inline: 7%;
    padding-top: 14px;
+}
+
+
+.bubbles{
+    height:200px;
+    width:200px;
+    position: absolute;
+    top: 53px;
+    right: 30px;
+}
+
+
+.bubble{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: -50px;
+    left:6px;
 }
 
 
