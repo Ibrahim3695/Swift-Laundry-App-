@@ -23,6 +23,9 @@ import Order from './orderComponent/Order';
 import Subscribe from './subscribeComponent/Subscribe';
 import DashBoard from './dashBoardComponent/DashBoard';
 import Plan from './signupComponent/planComponent/Plan';
+import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
+import BusinessDashBoard from './businessDashBoardComponent/BusinessDashBoard';
+import BusinessOrder from './businessOrderComponentss/BusinessOrder';
 
 const router = createBrowserRouter([
   {
@@ -77,7 +80,7 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />
   },
-    
+
   {
     element: <DashboardLayout />,
     children: [
