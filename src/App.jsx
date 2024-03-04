@@ -25,7 +25,7 @@ import DashBoard from './dashBoardComponent/DashBoard';
 import Plan from './signupComponent/planComponent/Plan';
 import BusinessDashBoard from './businessDashBoardComponent/BusinessDashBoard';
 import BusinessOrder from './businessOrderComponentss/BusinessOrder';
-// import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
+import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
 
 const router = createBrowserRouter([
   {
@@ -102,28 +102,28 @@ const router = createBrowserRouter([
 
 
 
-  // {
-  //   element: <BusinessDashboardLayout />,
-  //   children: [
-  //     {
-  //       path: "/businessDashboard",
-  //       element: <BusinessDashBoard />
-  //     },
-  //     {
-  //       path: "/businessOrder",
-  //       element: <BusinessOrder />
-  //     },
-  //     {
-  //       path: "/businessUser",
-  //       element: <Subscribe />
-  //     },
-  //     {
-  //       path: "/businessSubscribe",
-  //       element: <Subscribe />
-  //     },
+  {
+    element: <BusinessDashboardLayout />,
+    children: [
+      {
+        path: "/businessDashboard",
+        element: <BusinessDashBoard />
+      },
+      {
+        path: "/businessOrder",
+        element: <BusinessOrder />
+      },
+      {
+        path: "/businessUser",
+        element: <Subscribe />
+      },
+      {
+        path: "/businessSubscribe",
+        element: <Subscribe />
+      },
 
-  //   ]
-  // },
+    ]
+  },
 ]);
 
 
