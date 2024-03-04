@@ -23,9 +23,9 @@ import Order from './orderComponent/Order';
 import Subscribe from './subscribeComponent/Subscribe';
 import DashBoard from './dashBoardComponent/DashBoard';
 import Plan from './signupComponent/planComponent/Plan';
-import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
 import BusinessDashBoard from './businessDashBoardComponent/BusinessDashBoard';
 import BusinessOrder from './businessOrderComponentss/BusinessOrder';
+import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
 
 const router = createBrowserRouter([
   {
