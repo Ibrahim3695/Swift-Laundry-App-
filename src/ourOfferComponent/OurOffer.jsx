@@ -4,6 +4,8 @@ import "./OurOffer.css"
 const OurOffer = () => {
   return (
     <div id='offer' className='ourOfferMainDiv'>
+      <img src="./noto_bubbles.png" alt=""  className='bubbles'/>
+      <img src="./noto_bubbles (1).png" alt=""  className='bubble'/>
        <section className='offerTopDiv'>
         <p>What We Offer</p>
         <samp>Our Offer</samp>

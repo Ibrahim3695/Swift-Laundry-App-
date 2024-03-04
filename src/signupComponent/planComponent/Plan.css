@@ -9,6 +9,16 @@
     position: relative;
 }
 
+
+.noto_bubbles{
+    height:200px;
+    width:200px;
+    position: absolute;
+    bottom: -1px;
+    right: 30px;
+    z-index: 999999;
+}
+
 .planTopDiv {
     width: 100%;
     height: 25%;
@@ -156,41 +166,43 @@ samp {
 
 .Customer {
     height: 20%;
-    width: 90%;
+    width: 65%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    /* background: red; */
 }
 
 .Pick {
     height: 20%;
-    width: 90%;
+    width: 55%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    /* background: red; */
 }
 
 .Prices {
     height: 20%;
-    width: 90%;
+    width: 45%;
     display: flex;
-    justify-content: flex-start;
+    justify-content:space-between;
     align-items: center;
 }
 
 .Affordable {
     height: 20%;
-    width: 90%;
+    width: 45%;
     display: flex;
-    justify-content: flex-start;
+    justify-content:space-between;
     align-items: center;
 }
 
 .Customer {
     height: 20%;
-    width: 90%;
+    width: 65%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -379,10 +391,10 @@ samp {
 
 
     .Customer {
-        height: 20%;
-        width: 90%;
+        height:65%;
+        width:70%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -412,9 +424,9 @@ samp {
 
     .Customer {
         height: 20%;
-        width: 90%;
+        width: 60%;
         display: flex;
-        justify-content: flex-start;
+        justify-content:space-between;
         align-items: center;
     }
 
@@ -605,9 +617,9 @@ samp {
     
     .Customer {
         height: 20%;
-        width: 90%;
+        width: 60%;
         display: flex;
-        justify-content: flex-start;
+        justify-content:space-between;
         align-items: center;
     }
     
@@ -637,9 +649,9 @@ samp {
     
     .Customer {
         height: 20%;
-        width: 90%;
+        width: 60%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
     }
     

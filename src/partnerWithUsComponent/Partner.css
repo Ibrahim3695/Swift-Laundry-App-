@@ -18,6 +18,49 @@
 }
 
 
+.mark{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 69%;
+}
+
+.mark2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:58%;
+}
+
+.mark3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 62%;
+}
+
+.mark4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.mark5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 58%;
+}
+
+.mark6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 58%;
+}
+
+
 .containerForImage{
     height: 100%;
     width: 50%;
@@ -42,8 +85,8 @@
 
 .person2{
    position: absolute;
-   top: 80px;
-   right: 6px;
+   top: 120px;
+   right: 80px;
    /* z-index: 1; */
 }
 
@@ -92,6 +135,7 @@
     width: 40%;
     background:#4DC6E1;
     border: none;
+    color: white;
     border-radius: 10px;
 }
 
