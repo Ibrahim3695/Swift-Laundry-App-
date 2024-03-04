@@ -121,7 +121,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgb(236, 240, 244);
+    border: 1px solid rgb(209, 232, 255);
     box-shadow: 0 0 10px rgb(240, 237, 237);
     /* background-color: white; */
 }

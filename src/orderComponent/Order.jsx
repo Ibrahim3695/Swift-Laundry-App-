@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Order.css"
 import DoLaundryModal from '../components/DoLaundryModal'
 import WashModal from '../components/WashModal'
@@ -27,6 +27,25 @@ const Order = () => {
   const toggleDolaundry = () => {
     setShowDoLaundry(!showDoLaundry)
   }
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://task-management-i6w1.onrender.com/api/V1/users/get_all_status", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("myToken")}`
+          }
+        })
+        setAllStatus(response.data);
+        console.log(allStatus.data)
+      } catch (error) {
+        console.log(error);
+
+      }
+    }
+    fetchData()
+  }, ["myToken"])
+
 
   return (
     <div className='orderMainDiv'>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./DashBoad.css"
+import { RiDeleteBin6Line } from 'react-icons/ri'
 
 const DashBoard = () => {
 
@@ -41,98 +42,98 @@ const DashBoard = () => {
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
           <section className='orderOtems'>
             <p>Cleaneat Laundry</p>
             <p>1736647848848MGFD</p>
             <p>29/02/2024</p>
             <p>pending</p>
-            <p>x</p>
+            <p><RiDeleteBin6Line style={{width:"30px", height:"20px"}}/></p>
           </section>
 
         </div>
