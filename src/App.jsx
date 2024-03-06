@@ -26,6 +26,8 @@ import Plan from './signupComponent/planComponent/Plan';
 import BusinessDashBoard from './businessDashBoardComponent/BusinessDashBoard';
 import BusinessOrder from './businessOrderComponentss/BusinessOrder';
 import BusinessDashboardLayout from './BusinessDashboardLayoutComponent/BusinessDashboardLayout';
+import Verifys from './verifyPage/verify';
+import VerifyEmail from './verificationPage/verifyEmail';
 
 const router = createBrowserRouter([
   {
@@ -66,7 +68,7 @@ const router = createBrowserRouter([
 
   {
     path: "/registerLogin",
-    elemengt: <RegisterLogin />
+    element: <RegisterLogin />
   },
 
 
@@ -79,6 +81,16 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />
+  },
+
+  {
+    path: "/VerifyUser",
+    element: <Verifys />
+  },
+
+  {
+    path: "/emailVerification",
+    element: <VerifyEmail />
   },
 
   {

@@ -42,8 +42,8 @@
 }
 
 .pickUpDiv {
-    width: 23%;
-    height: 65%;
+    width: 25%;
+    height: 70%;
     border-radius: 10px;
     margin-bottom: 3%;
     display: flex;
@@ -76,8 +76,8 @@
 }
 
 .washDiv {
-    width: 23%;
-    height: 65%;
+    width: 25%;
+    height: 70%;
     border-radius: 10px;
     margin-bottom: 3%;
     display: flex;
@@ -114,8 +114,8 @@
 }
 
 .deliverDiv {
-    width: 23%;
-    height: 65%;
+    width: 25%;
+    height: 70%;
     border-radius: 10px;
     margin-bottom: 3%;
     background-color: white;

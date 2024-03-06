@@ -6,7 +6,7 @@ import { BeatLoader } from 'react-spinners';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom/dist/umd/react-router-dom.development';
 import { Link } from 'react-scroll';
-import { IoMdArrowRoundBack } from 'react-icons/io';
+import { IoIosEyeOff, IoMdArrowRoundBack, IoMdEye } from 'react-icons/io';
 
 const RegisterSignUp = () => {
   const [businessName, setBusinessName] = useState("")
@@ -78,7 +78,7 @@ const RegisterSignUp = () => {
         text: response.data?.message,
         icon: "success"
       });
-      navigate("/dashboards")
+      navigate("/registerLogin")
       localStorage.setItem('admindata', JSON.stringify(response.data?.data))
 
     } catch (err) {
@@ -100,6 +100,19 @@ const RegisterSignUp = () => {
   const navigateBack = () => {
     navigate(-1)
   }
+
+
+
+  const [show, setShow] = useState(false)
+  const showEyeIcon = () => {
+    setShow(!show)
+  }
+  const [shows, setShows] = useState(false)
+  const showEyeIcons = () => {
+    setShows(!shows)
+  }
+
+
 
   return (
     <>
@@ -124,13 +137,23 @@ const RegisterSignUp = () => {
                   <h3>Business Email</h3>
                   <input required type="email" className='emailInput' placeholder='Enter your business email' onChange={handleEmail} />
                   <h3>Password</h3>
-                  <input required type="text" className='passwordInput' placeholder='Enter your password' onChange={handleBusinessPassword} />
+                  <div className="addressy">
+                  <input required type={!show ? "password"  : "text"} placeholder='Enter your password' className='passwordInput' onChange={handleBusinessPassword} />
+                  <div onClick={showEyeIcon} className="eye_icon">
+                    {!show ? <IoIosEyeOff /> : <IoMdEye  />}
+                  </div>
+                </div>
                 </div>
                 <div className='phoneNumberContainer'>
                   <h3>Phone Number</h3>
                   <input required type="text" className='phoneNumberInput' placeholder='Enter your phone number' onChange={handleBusinessPhoneNumber} />
                   <h3>Confirm Password</h3>
-                  <input required type="text" className='confirmPasswordInput' placeholder='Confirm your password' onChange={handleBusinessConfirmPassword} />
+                  <div className="addressy">
+                  <input required type={!show ? "password"  : "text"} placeholder='Enter your password' className='passwordInput' onChange={handleBusinessConfirmPassword} />
+                  <div onClick={showEyeIcons} className="eye_icon">
+                    {!shows ? <IoIosEyeOff /> : <IoMdEye  />}
+                  </div>
+                </div>
                 </div>
                 <div></div>
               </div>
@@ -139,11 +162,7 @@ const RegisterSignUp = () => {
               <button disabled={isLoading} className='signUp' type='submit'>{isLoading ?
                 <BeatLoader color="white" /> : "signUp"} </button>
               <div className='alreadyHaveAccount'>
-                {/* <Link style={{ textDecoration: "none" }} to="/login"> */}
-                <Link style={{ textDecoration: "none" }} to='/registerLogin'>
-                  <span>Already have an account?<b>Login</b></span>
-                </Link>
-                {/* </Link> */}
+              <span >Don't have an account? <Link style={{ textDecoration: "none" }} to="/login"><b>Sign Up</b></Link></span>
               </div>
             </div>
           </div>

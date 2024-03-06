@@ -48,8 +48,8 @@
     box-shadow: 0 0 10px lightgray;
 }
 .saveTimeLogo{
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
     border-radius: 10px;
     margin-top: 6%;
     /* background-color: rgb(194, 185, 185); */
@@ -69,18 +69,17 @@
 }
 .payOnlineDiv{
     width: 23%;
-    height: 65%;
+    height: 70%;
     border-radius: 10px;
     margin-bottom: 3%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 0 10px lightgray;
 }
 .payOnlineLogo{
-    width: 58px;
-    height: 58px;
+    width:48px;
+    height:48px;
     border-radius: 10px;
     margin-top: 6%;
     /* background-color: rgb(194, 185, 185); */
@@ -110,8 +109,8 @@
     box-shadow: 0 0 10px lightgray;
 }
 .satisfactionLogo{
-    width: 58px;
-    height: 58px;
+    width:48px;
+    height:48px;
     border-radius: 10px;
     margin-top: 6%;
     /* background-color: rgb(194, 185, 185); */

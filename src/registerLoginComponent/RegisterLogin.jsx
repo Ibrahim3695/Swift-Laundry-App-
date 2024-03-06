@@ -10,17 +10,17 @@ import { IoMdArrowRoundBack } from "react-icons/io"
 
 
 const RegisterLogin = () => {
-  const [businessName, setBusiness] = useState("")
+  const [businessEmail, setBusinessEmail] = useState("")
   const [password, setpasswordBusiness] = useState("")
   const [isLoading, setIsLoading] = useState(false)
 
 
 
 
-  const handleBusinessNames = (e) => {
-    const newBusinessNames = e.target.value
-    setBusiness(newBusinessNames)
-    console.log(newBusinessNames)
+  const handleBusinessEmail = (e) => {
+    const newBusinessEmail = e.target.value
+    setBusinessEmail(newBusinessEmail)
+    console.log(newBusinessEmail)
   }
 
 
@@ -32,7 +32,7 @@ const RegisterLogin = () => {
 
 
   const url = "https://swift-laundry.vercel.app/login-shop"
-  const data = { business: businessName, password: password, }
+  const data = { email: businessEmail, password: password, }
   const navigate = useNavigate()
 
 
@@ -44,11 +44,10 @@ const RegisterLogin = () => {
       setIsLoading(true)
       const response = await axios.post(url, data)
       Swal.fire({
-        // title: "Congratulations! You've Successfully Login To  Swift Laundry",   
         text: response.data?.message,
         icon: "success"
       });
-      navigate("/dashboards")
+      navigate("/businessDashboard")
 
     } catch (err) {
       if (err.response) {
@@ -88,7 +87,7 @@ const RegisterLogin = () => {
           <div className='inputContainerss'>
             <div className='registeredInputContainer1s'>
               <h3>Business Email</h3>
-              <input required type="text" className='BusinessNames' placeholder='Enter your business email' onChange={handleBusinessNames} />
+              <input required type="text" className='BusinessNames' placeholder='Enter your business email' onChange={handleBusinessEmail} />
               <h3>Password</h3>
               <input required type="text" placeholder='Enter your password' className='addresss' onChange={handlepasswordBusiness} />
             </div>
